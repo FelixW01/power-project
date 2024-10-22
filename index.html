@@ -3,9 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Every Voice Matters | Home</title>
+    <!-- Materializecss CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Google Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav><h1>navbar</h1></nav>
+    <header>
+      <nav>
+        <div class="nav-wrapper" id="nav-container">
+          <div>
+            <a href="#!" class="brand-logo" id="logo-container"
+              ><img src="/public/Images/logo.png" class="main-logo"
+            /></a>
+          </div>
+          <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="/Resource/resource.html">Resources</a></li>
+            <li><a href="/contactPage/contact.html">Contact</a></li>
+            <li><a href="/questions/faq.html">FAQ</a></li>
+          </ul>
+          <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger right"
+            id="hamburger-icon"
+          >
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+      </nav>
+
+      <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+        <li><a href="/Resource/resource.html">Resources</a></li>
+        <li><a href="/contactPage/contact.html">Contact</a></li>
+        <li><a href="/questions/faq.html">FAQ</a></li>
+      </ul>
+    </header>
+    <main></main>
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

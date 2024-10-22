@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Navbar */
 .main-logo {
   max-width: 130px;
   max-height: auto;
@@ -44,3 +45,21 @@ body {
     color: white;
   }
 }
+/* Navbar */
+
+/* Main */
+
+/* Main */
+
+/* Footer */
+#footer-container {
+  width: 100%;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #1c232b;
+}
+.copyright-p {
+  text-align: center;
+}
+/* Footer */

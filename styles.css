@@ -1,15 +1,13 @@
-html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  display: flex; /* Make the body a flex container */
+  flex-direction: column; /* Stack children vertically */
 }
+
 /* Navbar */
 .main-logo {
   max-width: 130px;
@@ -55,9 +53,9 @@ body {
 #footer-container {
   width: 100%;
   padding: 0;
+  background-color: #1c232b;
   position: absolute;
   bottom: 0;
-  background-color: #1c232b;
 }
 .copyright-p {
   text-align: center;

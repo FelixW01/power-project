@@ -3,7 +3,167 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ Page</title>
+    <title>Every Voice Matters | Home</title>
+    <!-- Materializecss CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Google Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="faq.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper" id="nav-container">
+          <div>
+            <a href="#!" class="brand-logo" id="logo-container"
+              ><img src="/public/Images/logo.png" class="main-logo"
+            /></a>
+          </div>
+          <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="/Resource/resource.html">Resources</a></li>
+            <li><a href="/News/News.html">News</a></li>
+            <li><a href="/contactPage/contact.html">Contact</a></li>
+            <li><a href="/questions/faq.html">FAQ</a></li>
+          </ul>
+          <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger right"
+            id="hamburger-icon"
+          >
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+      </nav>
+
+      <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+        <li><a href="/Resource/resource.html">Resources</a></li>
+        <li><a href="/News/News.html">News</a></li>
+        <li><a href="/contactPage/contact.html">Contact</a></li>
+        <li><a href="/questions/faq.html">FAQ</a></li>
+      </ul>
+    </header>
+
+    <main class="main-container">
+      <section class="hero-container">
+        <div class="hero-image">
+          <div class="hero-info">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
+              voluptate?
+            </p>
+            <div>
+              <a class="waves-effect waves-light btn" id="hero-button"
+                >Language</a
+              >
+              <a class="waves-effect waves-light btn" id="hero-button"
+                >Resources</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learn-more-container">
+        <div class="card-div">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+            totam dolores. Alias, pariatur esse! Molestias ab odio ratione odit
+            cupiditate itaque non. Nam dignissimos amet laborum provident,
+            repudiandae expedita nesciunt. Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit.
+          </p>
+          <a class="waves-effect waves-light btn" id="hero-button"
+            >Learn More</a
+          >
+        </div>
+      </section>
+
+      <section class="content-card-container">
+        <div class="content-card-div">
+          <ul class="pagination">
+            <li class="waves-effect">
+              <a href="#!"><i class="material-icons">chevron_left</i></a>
+            </li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect">
+              <a href="#!"><i class="material-icons">chevron_right</i></a>
+            </li>
+          </ul>
+          <div class="content-div">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+              dignissimos nesciunt consectetur earum ipsa minus dolor ea
+              repudiandae numquam ab, aperiam aliquid optio eum inventore.
+            </p>
+            <a class="waves-effect waves-light btn" id="hero-button"
+              >About Us</a
+            >
+            <div class="row" id="content-card">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="./public/Images/collab-2.jpg" />
+                  </div>
+                  <div class="card-content" id="content-card-content">
+                    <p class="card-title">Title</p>
+                    <p>
+                      I am a very simple card. I am good at containing small
+                      bits of information. I am convenient because I require
+                      little markup to use effectively.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer" id="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Every Voice Matters</h5>
+            <p class="grey-text text-lighten-4">
+              See what you can do to make a change.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+              <li><a href="/Resource/resource.html">Resources</a></li>
+              <li><a href="/News/News.html">News</a></li>
+              <li><a href="/contactPage/contact.html">Contact</a></li>
+              <li><a href="/questions/faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="footer-div">
+        <p class="copyright-p">
+          ©<span id="current-year"></span> Voices of The World. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="faq.js"></script>
+  </body>
 </html>

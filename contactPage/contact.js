@@ -1,3 +1,15 @@
+function toggleCommentBox() {
+  const selectElement = document.getElementById("options");
+  const commentBox = document.getElementById("commentBox");
+  
+  if (selectElement.value !== "default") {
+    commentBox.style.display = "block";
+  } else {
+    commentBox.style.display = "none";
+  }
+}
+
+/* Dynamic footer and hamburger nav bar code*/
 const currentYear = new Date().getFullYear();
 
 // Event Listener that runs when DOM content is loaded

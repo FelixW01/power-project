@@ -46,7 +46,10 @@ body {
 /* Navbar */
 
 /* Main */
-
+#commentBox {
+  display: none;
+  
+}
 /* Main */
 
 /* Footer */

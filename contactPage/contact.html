@@ -4,14 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="style.css">
+   <!-- Materializecss CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+ />
+ <!-- Google Icon CDN -->
+ <link
+   href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet"
+ />
+ <link rel="stylesheet" href="contact.css" />
 </head>
+
 <body>
-    
+    <!-- Header/Nav -->
+<header>
+   <nav>
+     <div class="nav-wrapper" id="nav-container">
+       <div>
+         <a href="#!" class="brand-logo" id="logo-container"
+           ><img src="/public/Images/logo.png" class="main-logo"
+         /></a>
+       </div>
+       <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+         <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+         <li><a href="/Resource/resource.html">Resources</a></li>
+         <li><a href="/contactPage/contact.html">Contact</a></li>
+         <li><a href="/questions/faq.html">FAQ</a></li>
+       </ul>
+       <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+       <a
+         href="#"
+         data-target="mobile-demo"
+         class="sidenav-trigger right"
+         id="hamburger-icon"
+       >
+         <i class="material-icons">menu</i></a
+       >
+     </div>
+   </nav>
+
+   
+   <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+   <ul class="sidenav" id="mobile-demo">
+     <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+     <li><a href="/Resource/resource.html">Resources</a></li>
+     <li><a href="/contactPage/contact.html">Contact</a></li>
+     <li><a href="/questions/faq.html">FAQ</a></li>
+   </ul>
+</header>
+    <!-- End Header/Nav -->
 
 
+    <!-- Main Body-->
+ <main class="main-container">
+    <form class="contactForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
 
-    <footer></footer>
-    <script src="contact.js"></script>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email Address:</label>
+        <input for="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="options">Type of request:</label>
+        <select id="options" name="options" onchange="toggleCommentBox()" required>
+            <option value="default">-Select an option-</option>
+            <option value="Financial">Financial</option>
+            <option value="Education">Education</option>
+            <option value="Legal">Legal</option>
+            <option value="Medical">Medical</option>
+        </select>
+
+        <div id="commentBox">
+            <label for="comment">Comments:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Describe your request"></textarea>
+        </div>
+
+
+    </form>
+ </main>
+    <!-- End of Main Body -->
+
+
+    <!--Footer-->
+ <footer class="page-footer" id="footer-container">
+   <div class="container">
+     <div class="row">
+       <div class="col l6 s12">
+         <h5 class="white-text">Every Voice Matters</h5>
+         <p class="grey-text text-lighten-4">
+           See what you can do to make a change.
+         </p>
+       </div>
+       <div class="col l4 offset-l2 s12">
+         <h5 class="white-text">Links</h5>
+         <ul>
+           <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+           <li><a href="/Resource/resource.html">Resources</a></li>
+           <li><a href="/contactPage/contact.html">Contact</a></li>
+           <li><a href="/questions/faq.html">FAQ</a></li>
+         </ul>
+       </div>
+     </div>
+   </div>
+   <div class="container" id="footer-div">
+     <p class="copyright-p">
+       ©<span id="current-year"></span> Voices of The World. All rights
+       reserved.
+     </p>
+   </div>
+ </footer>
+
+ <footer class="page-footer" id="footer-container">
+   <div class="container" id="footer-div">
+     <p class="copyright-p">
+       ©<span id="current-year"></span> Voices of The World. All rights
+       reserved.
+     </p>
+   </div>
+ </footer>
+    <!-- End of Footer -->
+
+
+ <!-- Materialize JS CDN -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="contact.js"></script>
 </body>
 </html>

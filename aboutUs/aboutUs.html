@@ -3,9 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Every Voice Matters | Home</title>
+    <!-- Materializecss CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Google Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aboutUsStyles.css" />
   </head>
   <body>
-    <h1>This Is An About Us Page</h1>
+    <header>
+      <nav>
+        <div class="nav-wrapper" id="nav-container">
+          <div>
+            <a href="#!" class="brand-logo" id="logo-container"
+              ><img src="/public/Images/logo.png" class="main-logo"
+            /></a>
+          </div>
+          <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="/Resource/resource.html">Resources</a></li>
+            <li><a href="/News/News.html">News</a></li>
+            <li><a href="/contactPage/contact.html">Contact</a></li>
+            <li><a href="/questions/faq.html">FAQ</a></li>
+          </ul>
+          <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger right"
+            id="hamburger-icon"
+          >
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+      </nav>
+
+      <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+        <li><a href="/Resource/resource.html">Resources</a></li>
+        <li><a href="/News/News.html">News</a></li>
+        <li><a href="/contactPage/contact.html">Contact</a></li>
+        <li><a href="/questions/faq.html">FAQ</a></li>
+      </ul>
+    </header>
+
+    <main class="main-container">
+      <section>
+        <div class="information one">
+          <h1>About Us</h1>
+          <p>We are a non profit organization aiming to help Spanish speakers who live in Charlotte that have little to no understanding of English to navigate life here better. This can include help translating documents, setting up online accounts to display Spanish, setting up translation options onto their devices and teaching them how to use it, financial literacy, informing them of common scams that are targeted towards them, referring and informing them to the right place based upon their needs in example if they come in needing to acquire a state ID or how to file taxes we would discuss about the information or documents required before heading it, an estimate of a range on how much it should cost, and finally give them information of a business or location that is a partner of ours or has our seal of approval for doing more than the minimum for serving the Spanish community.</p>
+        </div>
+        <div class="information two">
+          <h3>Why We Do This?</h2>
+            <p>percentage statistics of people who live in the United States who do not speak English as well as stats for people who have been here for 5+ or 10+ years and do not speak English. Only government services are mandated to cater to the spanish language as well but even then a lot of these websites are severely outdated or not maintained compared to their English counterparts. Even at these government offices you still may find it troubling and a nuisance to find either a translator in the office you’re in so long wait times will happen because they only have one person that will be able to help you OR you have to wait even more time for a translator to be called by the gov office and wait for them to be available. Worst of all its almost guaranteed that you are going to have a subpar experience because the person you need to speak to and has the answers to all of your questions can not understand you so everything will be mediated by another person, sure this would be a little bit better by a physical person in that office but over the phone it is terrible, you will leave there with whatever your goal was heading in there unfulfilled and unfortunately maybe even worse than when you went in. People lie and scam us for not knowing better or not knowing English, hand us documents knowing we can’t read it.</p>
+        </div>
+        <div class="information three">
+          <h3>Why we started this and more about our founders</h3>
+          <p>We started this organization because it is an issue we are passionate about. This issue and divide because of a  language barrier has affected a majority of our founders whether it be us directly or our families.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer" id="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Every Voice Matters</h5>
+            <p class="grey-text text-lighten-4">
+              See what you can do to make a change.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+              <li><a href="/Resource/resource.html">Resources</a></li>
+              <li><a href="/News/News.html">News</a></li>
+              <li><a href="/contactPage/contact.html">Contact</a></li>
+              <li><a href="/questions/faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="footer-div">
+        <p class="copyright-p">
+          ©<span id="current-year"></span> Voices of The World. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="aboutUsJs.js"></script>
   </body>
 </html>

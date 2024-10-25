@@ -21,7 +21,7 @@
       <nav>
         <div class="nav-wrapper" id="nav-container">
           <div>
-            <a href="#!" class="brand-logo" id="logo-container"
+            <a href="/index.html" class="brand-logo" id="logo-container"
               ><img src="/public/Images/logo.png" class="main-logo"
             /></a>
           </div>
@@ -58,10 +58,7 @@
       <section class="hero-container">
         <div class="hero-image">
           <div class="hero-info">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
-              voluptate?
-            </p>
+            <p>Welcome to Voices of The World, where every voice matters.</p>
             <div>
               <a class="waves-effect waves-light btn" id="hero-button"
                 >Language</a
@@ -77,14 +74,18 @@
       <section class="learn-more-container">
         <div class="card-div">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-            totam dolores. Alias, pariatur esse! Molestias ab odio ratione odit
-            cupiditate itaque non. Nam dignissimos amet laborum provident,
-            repudiandae expedita nesciunt. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit.
+            We are a nonprofit organization aiming to help Spanish speakers
+            living in Charlotte who have little to no understanding of English
+            navigate life more easily. This includes assistance with translating
+            documents, setting up online accounts in Spanish, enabling
+            translation options on their devices, and teaching them how to use
+            these features.
           </p>
-          <a class="waves-effect waves-light btn" id="hero-button"
-            >Learn More</a
+          <a
+            class="waves-effect waves-light btn"
+            id="hero-button"
+            href="/aboutUs/aboutUs.html"
+            >About Us</a
           >
         </div>
       </section>
@@ -92,43 +93,13 @@
       <section class="content-card-container">
         <div class="content-card-div">
           <ul class="pagination">
-            <li class="waves-effect">
-              <a href="#!"><i class="material-icons">chevron_left</i></a>
-            </li>
-            <li class="active"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect">
-              <a href="#!"><i class="material-icons">chevron_right</i></a>
-            </li>
+
+            <li class="active" data-page="1"><a>1</a></li>
+            <li class="waves-effect" data-page="2"><a>2</a></li>
+            <li class="waves-effect" data-page="3"><a>3</a></li>
+
           </ul>
-          <div class="content-div">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
-              dignissimos nesciunt consectetur earum ipsa minus dolor ea
-              repudiandae numquam ab, aperiam aliquid optio eum inventore.
-            </p>
-            <a class="waves-effect waves-light btn" id="hero-button"
-              >About Us</a
-            >
-            <div class="row" id="content-card">
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="./public/Images/collab-2.jpg" />
-                  </div>
-                  <div class="card-content" id="content-card-content">
-                    <p class="card-title">Title</p>
-                    <p>
-                      I am a very simple card. I am good at containing small
-                      bits of information. I am convenient because I require
-                      little markup to use effectively.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="content-div" id="content-div"></div>
         </div>
       </section>
     </main>

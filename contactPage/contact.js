@@ -1,7 +1,7 @@
 function toggleCommentBox() {
-  const selectElement = document.getElementById("options");
-  const commentBox = document.getElementById("commentBox");
-  
+  const selectElement = document.getElementById('options-form');
+  const commentBox = document.getElementById('commentBox');
+
   if (selectElement.value !== "default") {
     commentBox.style.display = "block";
   } else {

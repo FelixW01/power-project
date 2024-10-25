@@ -46,9 +46,16 @@ body {
 /* Navbar */
 
 /* Main */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #commentBox {
   display: none;
-  
+
 }
 /* Main */
 

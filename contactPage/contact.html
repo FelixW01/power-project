@@ -45,7 +45,7 @@
      </div>
    </nav>
 
-   
+
    <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
    <ul class="sidenav" id="mobile-demo">
      <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
@@ -59,7 +59,8 @@
 
     <!-- Main Body-->
  <main class="main-container">
-    <form class="contactForm">
+    <form class="contactForm" action="#">
+        <fieldset>
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
 
@@ -73,20 +74,21 @@
         <input type="tel" id="phone" name="phone" required>
 
         <label for="options">Type of request:</label>
-        <select id="options" name="options" onchange="toggleCommentBox()" required>
+        <select id="options-form" name="options" onchange="toggleCommentBox()" required>
             <option value="default">-Select an option-</option>
-            <option value="Financial">Financial</option>
-            <option value="Education">Education</option>
-            <option value="Legal">Legal</option>
-            <option value="Medical">Medical</option>
+            <option value="first">Financial</option>
+            <option value="second">Education</option>
+            <option value="third">Legal</option>
+            <option value="fourth">Medical</option>
         </select>
 
         <div id="commentBox">
             <label for="comment">Comments:</label>
             <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Describe your request"></textarea>
         </div>
+        <input type="submit" value="submit"/>
 
-
+        </fieldset>
     </form>
  </main>
     <!-- End of Main Body -->

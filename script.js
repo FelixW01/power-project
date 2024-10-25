@@ -66,7 +66,7 @@ function populateContent(currentPage) {
             <a
               class="waves-effect waves-light btn"
               id="hero-button"
-              href="${contentData[currentPage].href}
+              href="${contentData[currentPage].href}"}
               alt="${contentData[currentPage].alt}"
               >Learn More</a
             >

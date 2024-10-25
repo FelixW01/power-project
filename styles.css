@@ -196,12 +196,36 @@ p {
   max-width: 70%;
   height: auto;
 }
-@media (min-width: 1500px) {
-  .card-div p {
-    min-width: 70ch;
-    max-width: 100ch;
+
+@media (min-width: 318px) {
+  .card-div {
+    margin: 0;
+  }
+  .text-card {
+    padding: 0.5rem;
+  }
+  .text-card p {
+    font-size: 1.25rem;
   }
 }
+
+@media (min-width: 700px) {
+  .card-image {
+    max-width: 70%;
+    height: auto;
+  }
+  .card {
+    max-width: 50vw;
+  }
+  #content-card-content p {
+    margin-top: 1.5rem;
+    max-width: 55ch;
+  }
+  .text-card {
+    padding: 1.5rem;
+  }
+}
+
 @media (min-width: 992px) {
   .hero-container {
     height: 50vh;
@@ -230,28 +254,14 @@ p {
     margin: 2rem 0 1rem 0;
   }
 }
-@media (min-width: 700px) {
-  .card-image {
-    max-width: 70%;
-    height: auto;
-  }
-  .card {
-    max-width: 50vw;
-  }
-  #content-card-content p {
-    margin-top: 1.5rem;
-    max-width: 55ch;
-  }
-}
-@media (min-width: 318px) {
-  .card-div {
-    margin: 0;
+
+@media (min-width: 1500px) {
+  .card-div p {
+    min-width: 70ch;
+    max-width: 100ch;
   }
   .text-card {
-    padding: 0.5rem;
-  }
-  .text-card p {
-    font-size: 1.25rem;
+    padding: 2rem;
   }
 }
 /* Main */
@@ -266,3 +276,10 @@ p {
   text-align: center;
 }
 /* Footer */
+
+/* The google translation library was conflicting with materialize's CSS, so I had to overwrite this to make the select language box visible */
+select {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

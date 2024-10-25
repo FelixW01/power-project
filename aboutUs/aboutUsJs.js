@@ -9,3 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Get the current year to create a dynamic footer
 document.getElementById("current-year").textContent = currentYear;
+
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".dropdown-trigger");
+  var instances = M.Dropdown.init(elems, options);
+});
+
+// Or with jQuery
+
+$(".dropdown-trigger").dropdown();

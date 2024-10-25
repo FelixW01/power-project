@@ -57,8 +57,8 @@ p {
   .collapsible-body {
     font-size: 1rem;
   }
-  .responsive-img {
-    max-height: 300px;
+  .collapsible-body {
+    padding: 0px 10px;
   }
 }
 @media (min-width: 760px) {
@@ -66,11 +66,19 @@ p {
   .collapsible-body {
     font-size: 1.5rem;
   }
+  .collapsible-body {
+    padding: 5px 20px;
+    font-size: 1.25rem;
+  }
 }
 @media (min-width: 1024px) {
   .collapsible-header,
   .collapsible-body {
     font-size: 2rem;
+  }
+  .collapsible-body {
+    padding: 10px 30px;
+    font-size: 1.5rem;
   }
 }
 /* Main */

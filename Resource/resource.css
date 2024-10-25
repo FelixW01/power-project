@@ -92,6 +92,7 @@ h2:hover {
 
 .card-content {
   padding: 20px;
+  min-height: 270px;
 }
 .card-title {
   font-size: 1.5em;

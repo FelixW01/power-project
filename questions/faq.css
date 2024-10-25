@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+p {
+  margin: 0;
+}
+
+/* Navbar */
+.main-logo {
+  max-width: 130px;
+  max-height: auto;
+}
+
+#nav-container {
+  background-color: #1c232b;
+  min-height: 10vh;
+}
+#ul-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  #logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  #hamburger-icon {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #mobile-demo {
+    background-color: #1c232b;
+  }
+  #mobile-demo li a {
+    color: white;
+  }
+}
+/* Navbar */
+
+/* Main */
+
+@media (min-width: 425px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 1rem;
+  }
+  .collapsible-body {
+    padding: 0px 10px;
+  }
+}
+@media (min-width: 760px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 1.5rem;
+  }
+  .collapsible-body {
+    padding: 5px 20px;
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1224px) {
+  .container {
+    width: 90%;
+  }
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 2rem;
+  }
+  .collapsible-body {
+    padding: 10px 30px;
+    font-size: 1.5rem;
+  }
+}
+/* Main */
+
+/* Footer */
+#footer-container {
+  width: 100%;
+  padding: 0;
+  background-color: #1c232b;
+}
+.copyright-p {
+  text-align: center;
+}
+/* Footer */

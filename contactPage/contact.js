@@ -1,12 +1,18 @@
+/* Appearing comment box*/
 function toggleCommentBox() {
   const selectElement = document.getElementById('options-form');
   const commentBox = document.getElementById('commentBox');
-
   if (selectElement.value !== 'default') {
     commentBox.style.display = 'block';
   } else {
     commentBox.style.display = 'none';
   }
+}
+
+const firstName = document.getElementById("firstName").value.trim();
+if (firstName === "") {
+  document.getElementById().classList.remove('hidden');
+  isValid = false;
 }
 
 /* Dynamic footer and hamburger nav bar code*/

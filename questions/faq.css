@@ -48,176 +48,29 @@ p {
 /* Navbar */
 
 /* Main */
-.main-container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
+.collapsible-header,
+.collapsible-body {
+  width: 100vw;
 }
-.hero-container {
-  height: 35vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hero-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("./public/Images/collab-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-info p {
-  text-align: center;
-  color: white;
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0, 0.9);
-  width: 70%;
-}
-.hero-info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8rem;
-}
-
-#hero-button {
-  background-color: #00bfa5;
-  margin: 0 0.3rem 0 0.3rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.learn-more-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1.5rem;
-}
-
-.card-div {
-  background-color: white;
-  position: relative;
-  margin-top: -35px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 80vw;
-}
-
-.card-div p {
-  margin-bottom: 1rem;
-  max-width: 42vh;
-}
-
-.card-div #hero-button {
-  padding: 0 4rem 0 4rem;
-}
-
-.content-card-container {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  min-height: 30vh;
-}
-.content-card-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.content-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.content-div p {
-  margin-bottom: 1rem;
-  max-width: 42ch;
-}
-#content-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1rem;
-}
-#content-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: start;
-}
-.card-title {
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-.active {
-  background-color: #1c232b !important;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.card-image {
-  max-width: 70%;
-  height: auto;
-}
-@media (min-width: 992px) {
-  .hero-container {
-    height: 50vh;
+@media (min-width: 425px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 1rem;
   }
-  .card-div {
-    min-height: 40vh;
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: -4rem;
-  }
-  .card-div p {
-    max-width: 65ch;
-  }
-  .learn-more-container {
-    width: 100%;
-  }
-  .hero-image {
-    background-image: url("./public/Images/collab-img.png");
-  }
-  .content-card-div {
-    margin-top: 3.1rem;
+  .responsive-img {
+    max-height: 300px;
   }
 }
-@media (min-width: 700px) {
-  .card-image {
-    max-width: 70%;
-    height: auto;
+@media (min-width: 760px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 1.5rem;
   }
-
-  .card {
-    max-width: 50vw;
-  }
-  #content-card-content p {
-    margin-top: 1.5rem;
-    max-width: 55ch;
+}
+@media (min-width: 1024px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 2rem;
   }
 }
 /* Main */

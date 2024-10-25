@@ -86,6 +86,16 @@ label {
   margin: 20px;
 
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+  marg
+}
+
+.hidden {
+  display: none;
+}
 /* Main */
 
 /* Footer */

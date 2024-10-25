@@ -9,11 +9,44 @@ function toggleCommentBox() {
   }
 }
 
-const firstName = document.getElementById("firstName").value.trim();
-if (firstName === "") {
-  document.getElementById().classList.remove('hidden');
-  isValid = false;
+/* Form validation */
+function validateForm() {
+  document.querySelectorAll('error').forEach(el => el.classList.add('hidden'))
+  let isValid = true;
+  const firstName = document.getElementById("firstName").value.trim();
+  if (firstName === "") {
+    document.getElementById("firstNameError").classList.remove('hidden');
+    isValid = false;
+  }
+  const lastName = document.getElementById("lastName").value.trim();
+  if (lastName === "") {
+    document.getElementById("lastNameError").classList.remove('hidden');
+    isValid = false;
+  }
+  const email = document.getElementById("email").value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email === "" || !emailRegex.test(email)) {
+    document.getElementById("emailError").classList.remove('hidden');
+    isValid = false;
+  }
+  const phone = document.getElementById("phone").value.trim();
+  const phoneRegex = /^(\+?\d{1,2}\s?)?(\(?\d{3}\)?[\s.-]?)?\d{3}[\s.-]?\d{4}$/;
+  if (phone === "" || !phoneRegex.test(phone)) {
+    document.getElementById("phoneError").classList.remove('hidden');
+    isValid = false;
+  }
+  const options = document.getElementById("options").value;
+  if (options === "default") {
+    document.getElementById("optionsError").classList.remove('hidden');
+  }
+  return isValid;
 }
+
+document.getElementById('').addEventListener('submit', function(event)) {
+  if (!validateForm()) {
+    e.preventDefault();
+  }
+};
 
 /* Dynamic footer and hamburger nav bar code*/
 const currentYear = new Date().getFullYear();

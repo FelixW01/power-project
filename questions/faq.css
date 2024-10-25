@@ -48,10 +48,7 @@ p {
 /* Navbar */
 
 /* Main */
-.collapsible-header,
-.collapsible-body {
-  width: 100vw;
-}
+
 @media (min-width: 425px) {
   .collapsible-header,
   .collapsible-body {
@@ -71,7 +68,10 @@ p {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1224px) {
+  .container {
+    width: 90%;
+  }
   .collapsible-header,
   .collapsible-body {
     font-size: 2rem;

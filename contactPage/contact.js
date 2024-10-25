@@ -2,10 +2,10 @@ function toggleCommentBox() {
   const selectElement = document.getElementById('options-form');
   const commentBox = document.getElementById('commentBox');
 
-  if (selectElement.value !== "default") {
-    commentBox.style.display = "block";
+  if (selectElement.value !== 'default') {
+    commentBox.style.display = 'block';
   } else {
-    commentBox.style.display = "none";
+    commentBox.style.display = 'none';
   }
 }
 

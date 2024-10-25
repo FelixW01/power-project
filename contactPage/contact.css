@@ -46,15 +46,32 @@ body {
 /* Navbar */
 
 /* Main */
+main {
+display: block;
+}
+
 form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+}
+
+#options-form {
+  display: block;
 }
 
 #commentBox {
   display: none;
+  margin: 20px;
 
 }
 /* Main */

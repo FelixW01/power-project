@@ -61,27 +61,36 @@
 
     <!-- Main Body-->
 <main class="main-container">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Contact us, we want to hear from you.</h1>
+      <p>Headquarters: 1423 Red Ventures Dr, Fort Mill, SC 29707</p>
+      <p>Email: contact@voicesoftheworld.org
+      </p>
+    </div>
+  </div>
+
   <div class="form-container">
     <form class="contactForm" action="">
-      <fieldset>
+      <fieldset class="fName">
         <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
         <div class="error hidden" id="firstNameError">First Name is required.</div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="lName">
         <label for="lastName">Last Name:</label>
         <input type="text" id="lastName" name="lastName" required>
         <div class="error hidden" id="lastNameError">Last Name is required.</div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="mail">
         <label for="email">Email Address:</label>
         <input for="email" id="email" name="email" required>
         <div class="error hidden" id="emailError">Valid email is required.</div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="pNumber">
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required>
         <div class="error hidden" id="phoneError">Please enter a valid phone number.</div>
@@ -101,7 +110,7 @@
             <label for="comment">Comments:</label>
             <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Describe your request"></textarea>
         </div>
-        <input type="submit" value="Contact Us"/>
+        <input id="cuButton" type="submit" value="Contact Us"/>
       </div>
     </form>
 

@@ -243,6 +243,17 @@ p {
     max-width: 55ch;
   }
 }
+@media (min-width: 318px) {
+  .card-div {
+    margin: 0;
+  }
+  .text-card {
+    padding: 0.5rem;
+  }
+  .text-card p {
+    font-size: 1.25rem;
+  }
+}
 /* Main */
 
 /* Footer */

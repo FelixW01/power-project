@@ -71,18 +71,20 @@ h1 {
   color: rgb(232, 232, 232);
   text-shadow:  3px 3px 3px #1c232b;
 }
-p {
-  font-size: 18px;
+.heroText {
+  font-size: 20px;
   margin: 6px;
   padding-top: 18px;
+  ;
   text-align: center;
   color: white;
-  text-shadow:  2px 2px 2px #1c232b;
+  text-shadow:  2px 2px 2px #000000;
 }
 
-/* #enquiry {
-  padding-top: ;
-} */
+#enquiry {
+  color: rgb(255, 188, 4);
+  text-shadow: 2px 2px 2px #000000;
+} 
 
 /* form css */
 .form-container {

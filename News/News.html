@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Page</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Every Voice Matters | Resource</title>
+    <!-- Materializecss CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- Google Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper" id="nav-container">
+          <a href="/index.html" class="brand-logo" id="logo-container"
+            ><img
+              src="/public/Images/logo.png"
+              class="main-logo"
+              alt="logo of 5 people holding hands in a circle"
+          /></a>
+          <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="/Resource/resource.html">Resources</a></li>
+            <li><a href="/News/News.html">News</a></li>
+            <li><a href="/contactPage/contact.html">Contact</a></li>
+            <li><a href="/questions/faq.html">FAQ</a></li>
+          </ul>
+          <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger right"
+            id="hamburger-icon">
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+      </nav>
+
+      <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+        <li><a href="/Resource/resource.html">Resources</a></li>
+        <li><a href="/News/News.html">News</a></li>
+        <li><a href="/contactPage/contact.html">Contact</a></li>
+        <li><a href="/questions/faq.html">FAQ</a></li>
+      </ul>
+    </header>
+    <main class="container">
+      <img class="world" src="/public/Images/world.jpg" alt="World Image" />
+      <h2>Every Voice Matters</h2>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/public/Images/content-1.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"
+            >News #1<i class="material-icons right">more_vert</i></span
+          >
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"
+            >News #2<i class="material-icons right">close</i></span
+          >
+          <p>
+            Here is some more information about this product that is only
+            revealed once clicked on.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/public/Images/content-1.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"
+            >News #3<i class="material-icons right">more_vert</i></span
+          >
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"
+            >Card Title<i class="material-icons right">close</i></span
+          >
+          <p>
+            Here is some more information about this product that is only
+            revealed once clicked on.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/public/Images/content-1.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"
+            >News #4<i class="material-icons right">more_vert</i></span
+          >
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"
+            >Card Title<i class="material-icons right">close</i></span
+          >
+          <p>
+            Here is some more information about this product that is only
+            revealed once clicked on.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/public/Images/content-1.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"
+            >Card Title<i class="material-icons right">more_vert</i></span
+          >
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"
+            >Card Title<i class="material-icons right">close</i></span
+          >
+          <p>
+            Here is some more information about this product that is only
+            revealed once clicked on.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer" id="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Every Voice Matters</h5>
+            <p class="grey-text text-lighten-4">
+              See what you can do to make a change.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+              <li><a href="/Resource/resource.html">Resources</a></li>
+              <li><a href="/News/News.html">News</a></li>
+              <li><a href="/contactPage/contact.html">Contact</a></li>
+              <li><a href="/questions/faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="footer-div">
+        <p class="copyright-p">
+          ©<span id="current-year"></span> Voices of The World. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="News.js"></script>
+  </body>
 </html>

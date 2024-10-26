@@ -49,6 +49,13 @@ p {
 /* Navbar */
 
 /* Main */
+
+.photo{
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+}
+
 .main-container {
   width: 100%;
   margin-bottom: 20px;

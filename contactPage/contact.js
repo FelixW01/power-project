@@ -52,9 +52,14 @@ function validateForm() {
 
 document.getElementById('contactForm').addEventListener('submit', function(event)) {
   if (!validateForm()) {
-    event.preventDefault();
+    Event.preventDefault();
   }
 }; */
+
+
+
+
+
 
 
 

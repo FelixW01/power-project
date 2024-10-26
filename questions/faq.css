@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+p {
+  margin: 0;
+}
+
+/* Navbar */
+.main-logo {
+  max-width: 100%;
+  max-height: 10vh;
+}
+
+#nav-container {
+  background-color: #1c232b;
+  min-height: 10vh;
+}
+#ul-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  #logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  #hamburger-icon {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #mobile-demo {
+    background-color: #1c232b;
+  }
+  #mobile-demo li a {
+    color: white;
+  }
+}
+/* Navbar */
+
+/* Main */
+@media (min-width: 670px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 1.7rem;
+  }
+  .collapsible-body {
+    padding: 0px 10px;
+  }
+}
+@media (min-width: 1100px) {
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 1.9rem;
+  }
+  .collapsible-body {
+    padding: 5px 20px;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    width: 80%;
+  }
+  .collapsible-header,
+  .collapsible-body {
+    font-size: 2.2rem;
+  }
+  .collapsible-body {
+    padding: 10px 30px;
+    font-size: 2rem;
+  }
+  .material-icons {
+    padding-top: 1px;
+  }
+  .hero-container {
+    min-height: 30vw;
+  }
+}
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/public/Images/content-4.JPG");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.hero-container {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #002f6c;
+}
+
+.material-icons {
+  padding-top: 1%;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5vw;
+  color: white;
+  padding-bottom: 1%;
+}
+.collapsible {
+  margin-top: 0;
+}
+/* Main */
+
+/* Footer */
+#footer-container {
+  width: 100%;
+  padding: 0;
+  background-color: #1c232b;
+}
+.copyright-p {
+  text-align: center;
+}
+/* Footer */

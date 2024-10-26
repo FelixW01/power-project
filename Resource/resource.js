@@ -7,3 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
   var instances = M.Sidenav.init(elems, { edge: "right" });
 });
 
+// Get the current year to create a dynamic footer
+document.getElementById("current-year").textContent = currentYear;

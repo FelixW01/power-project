@@ -4,15 +4,17 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #fafafa;
 }
 p {
   margin: 0;
+  padding: 0;
 }
 
 /* Navbar */
 .main-logo {
-  max-width: 130px;
-  max-height: auto;
+  max-width: 100%;
+  max-height: 10vh;
 }
 
 #nav-container {
@@ -67,8 +69,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./public/Images/collab-img.jpeg");
-
+  background-image: url("./public/Images/collab-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,50 +77,53 @@ p {
   height: 100%;
 }
 
+.text-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(28, 43, 54, 0.7);
+  padding: 1.25rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%;
+}
+
+.hero-button {
+  margin: 1rem 0 1rem 0;
+}
 .hero-info p {
   text-align: center;
   color: white;
   font-size: 1.5rem;
-  padding-bottom: 1rem;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 0px 0px 5px rgba(0, 0, 0, 0.9);
+  width: 70%;
 }
 .hero-info {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 #hero-button {
   background-color: #00bfa5;
   margin: 0 0.3rem 0 0.3rem;
-}
-
-@media (min-width: 992px) {
-  .hero-container {
-    height: 50vh;
-  }
-  .hero-image {
-    height: 100%;
-  }
-  .card-div {
-    max-width: 30vw;
-  }
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .learn-more-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
   padding: 1.5rem;
 }
 
 .card-div {
   background-color: white;
   position: relative;
-  margin-top: -50px;
+  margin-top: -35px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -170,22 +174,73 @@ p {
   margin-top: 1rem;
 }
 #content-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: start;
 }
 .card-title {
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
 }
-
+.active {
+  background-color: #1c232b !important;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-image {
+  max-width: 70%;
+  height: auto;
+}
+@media (min-width: 1500px) {
+  .card-div p {
+    min-width: 70ch;
+    max-width: 100ch;
+  }
+}
 @media (min-width: 992px) {
+  .hero-container {
+    height: 50vh;
+  }
   .card-div {
-    min-height: 30vh;
+    min-height: 40vh;
+    min-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -4rem;
   }
   .card-div p {
-    max-width: 60ch;
+    max-width: 65ch;
+  }
+  .learn-more-container {
+    width: 100%;
+  }
+  .hero-image {
+    background-image: url("./public/Images/collab-img.png");
+  }
+  .content-card-div {
+    margin-top: 3.1rem;
+  }
+  .hero-button {
+    margin: 2rem 0 1rem 0;
+  }
+}
+@media (min-width: 700px) {
+  .card-image {
+    max-width: 70%;
+    height: auto;
+  }
+  .card {
+    max-width: 50vw;
+  }
+  #content-card-content p {
+    margin-top: 1.5rem;
+    max-width: 55ch;
   }
 }
 /* Main */

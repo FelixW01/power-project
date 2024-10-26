@@ -1,7 +1,7 @@
 # Voices of The World
 
 ## Live Website 
-
+https://voicesoftheworld.netlify.app/
 
 ## Description
 This website was created for the purpose of helping Spanish speakers living in Charlotte who have little to no understanding of English navigate life more easily. This includes assistance with translating documents, setting up online accounts in Spanish, enabling translation options on their devices, and teaching them how to use these features.
@@ -37,4 +37,4 @@ To run locally, follow these steps:
 Felix Willem, Issiah Haniff, Itaty Constante, Ismael Martinez, Efren Laris
 
 ## Questions
-If you have any questions please contact my github: FelixW01 Email: felixwillem01@yahoo.com.
+If you have any questions please contact me via github: FelixW01 or Email: felixwillem01@yahoo.com.

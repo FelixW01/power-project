@@ -14,19 +14,19 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="aboutUsStyles.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="nav-wrapper" id="nav-container">
-          <a href="/index.html" class="brand-logo" id="logo-container"
-            ><img
-              src="/public/Images/logo.png"
-              class="main-logo"
-              alt="logo of 5 people holding hands in a circle"
-          /></a>
+          <div>
+            <a href="/index.html" class="brand-logo" id="logo-container"
+              ><img src="/public/Images/logo.png" class="main-logo"
+            /></a>
+          </div>
           <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a id="language-button">Language</a></li>
             <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
             <li><a href="/Resource/resource.html">Resources</a></li>
             <li><a href="/News/News.html">News</a></li>
@@ -57,57 +57,16 @@
     </header>
 
     <main class="main-container">
-      <section class="hero-container">
-        <div
-          class="hero-image"
-          alt="background banner image of a diverse group of people collaborating"
-        >
-          <div class="hero-info">
-            <div class="text-card">
-              <p>Welcome to Voices of The World, where every voice matters.</p>
-            </div>
-            <div class="hero-button">
-              <a class="waves-effect waves-light btn" id="language-button"
-                >Language</a
-              >
-              <a class="waves-effect waves-light btn" id="hero-button" href="/Resource/resource.html"
-                >Resources</a
-              >
-            </div>
-            </div>
-          </div>
+        <div class="information one">
+          <h1 class="title">About Us</h1>
+          <p>We are a nonprofit helping Spanish speakers in Charlotte with limited English skills. We assist with document translation, setting up Spanish-language accounts, financial literacy, and scam awareness. We also provide referrals for resources, offering guidance on obtaining a state ID or filing taxes, including necessary documents, estimated costs, and recommendations for trusted local businesses.</p>
         </div>
-      </section>
-        
-
-      <section class="learn-more-container">
-        <div class="card-div">
-          
-          <p>
-            We are a nonprofit organization aiming to help Spanish speakers
-            living in Charlotte who have little to no understanding of English
-            navigate life more easily. This includes assistance with translating
-            documents, setting up online accounts in Spanish, enabling
-            translation options on their devices, and teaching them how to use
-            these features.
-          </p>
-          <a
-            class="waves-effect waves-light btn"
-            id="hero-button"
-            href="/aboutUs/aboutUs.html"
-            >About Us</a
-          >
-        </div>
-      </section>
-
-      <section class="content-card-container">
-        <div class="content-card-div">
-          <ul class="pagination">
-            <li class="waves-effect active" data-page="1"><a>1</a></li>
-            <li class="waves-effect" data-page="2"><a>2</a></li>
-            <li class="waves-effect" data-page="3"><a>3</a></li>
-          </ul>
-          <div class="content-div" id="content-div"></div>
+        <div class="information two">
+          <h3 class="title">Why We Do This?</h2>
+            <p>Many people in the U.S. struggle with English, including those here for over 5 or 10 years. While government services must provide Spanish assistance, websites are often outdated, and finding a translator can be difficult, leading to long wait times. Communication is often mediated by someone who doesn't fully understand, resulting in unmet needs and vulnerability to scams, such as receiving unreadable documents.</p>        </div>
+        <div class="information three">
+          <h3 class="title">Why we started this and more about our founders</h3>
+          <p>We started this organization because it is an issue we are passionate about. This issue and divide because of a  language barrier has affected a majority of our founders whether it be us directly or our families.</p>
         </div>
       </section>
     </main>
@@ -143,10 +102,9 @@
 
     <!-- Materialize JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="aboutUsJs.js"></script>
     <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
+    type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

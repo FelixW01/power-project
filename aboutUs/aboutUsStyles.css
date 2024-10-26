@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.main-logo {
+  max-width: 100%;
+  max-height: 10vh;
+}
+
+#nav-container {
+  background-color: #1c232b;
+  min-height: 10vh;
+}
+#ul-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  #logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  #hamburger-icon {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #mobile-demo {
+    background-color: #1c232b;
+  }
+  #mobile-demo li a {
+    color: white;
+  }
+}
+/* Navbar */
+
+/* Main */
+.main-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: xx-large;
+  padding: 10px;
+  background-color: #00bfa5;
+  border-radius: 15px;
+  justify-self: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 18px;
+  /* min-width: 80%;
+  max-width: 28rem; */
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.information:hover {
+  transform: scale(1.05);
+}
+
+.information p {
+  max-width: 42ch;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: inherit;
+}
+
+@media (min-width: 800px) {
+  .information p {
+    width: 50ch;
+  }
+}
+
+@media (min-width: 450px) {
+  .information {
+    width: 28rem;
+  }
+}
+
+/* Main */
+
+/* Footer */
+#footer-container {
+  width: 100%;
+  padding: 0;
+  background-color: #1c232b;
+}
+.copyright-p {
+  text-align: center;
+}
+/* Footer */
+
+/* The google translation library was conflicting with materialize's CSS, so I had to overwrite this to make the select language box visible */
+select {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+#mobile-demo {
+  background-color: #1c232b;
+}
+#mobile-demo li a {
+  color: white;
+}

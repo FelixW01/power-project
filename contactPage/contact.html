@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+   <!-- Materializecss CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+ />
+ <!-- Google Icon CDN -->
+ <link
+   href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet"
+ />
+ <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+    <!-- Header/Nav -->
+<header>
+  <nav>
+    <div class="nav-wrapper" id="nav-container">
+      <div>
+        <a href="/index.html" class="brand-logo" id="logo-container"
+          ><img src="/public/Images/logo.png" class="main-logo"
+        /></a>
+      </div>
+      <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+        <li><a id="language-button">Language</a></li>
+        <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+        <li><a href="/Resource/resource.html">Resources</a></li>
+        <li><a href="/News/News.html">News</a></li>
+        <li><a href="/contactPage/contact.html">Contact</a></li>
+        <li><a href="/questions/faq.html">FAQ</a></li>
+      </ul>
+      <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+      <a
+        href="#"
+        data-target="mobile-demo"
+        class="sidenav-trigger right"
+        id="hamburger-icon"
+      >
+        <i class="material-icons">menu</i></a
+      >
+    </div>
+  </nav>
+
+
+   <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+   <ul class="sidenav" id="mobile-demo">
+    <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+    <li><a href="/Resource/resource.html">Resources</a></li>
+    <li><a href="/News/News.html">News</a></li>
+    <li><a href="/contactPage/contact.html">Contact</a></li>
+    <li><a href="/questions/faq.html">FAQ</a></li>
+    <li><a class="waves-effect" id="google_translate_element"></a></li>
+  </ul>
+</header>
+    <!-- End Header/Nav -->
+
+
+    <!-- Main Body-->
+<main class="main-container">
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Contact us, we want to hear from you.</h1>
+      <div class="heroText">
+      <p>Headquarters: 1423 Red Ventures Dr, Fort Mill, SC 29707</p>
+      <p>Email: contact@voicesoftheworld.org</p>
+      <p id="enquiry">For inquiries, please fill out the form below.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <form class="contactForm" action="">
+      <fieldset class="fName">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <div class="error hidden" id="firstNameError">First Name is required.</div>
+      </fieldset>
+
+      <fieldset class="lName">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <div class="error hidden" id="lastNameError">Last Name is required.</div>
+      </fieldset>
+
+      <fieldset class="mail">
+        <label for="email">Email Address:</label>
+        <input for="email" id="email" name="email" required>
+        <div class="error hidden" id="emailError">Valid email is required.</div>
+      </fieldset>
+
+      <fieldset class="pNumber">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+
+        <div class="error hidden" id="phoneError">Please enter a valid phone number.</div>
+      </fieldset>
+
+        <label for="options">Type of request:</label>
+        <select id="options-form" name="options" onchange="toggleCommentBox()" required>
+            <option value="default">Select an option</option>
+            <option value="financial">Financial</option>
+            <option value="education">Education</option>
+            <option value="legal">Legal</option>
+            <option value="medical">Medical</option>
+            <option value="other">Other</option>
+        </select>
+
+        <div id="commentBox">
+            <label for="comment">Comments:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Describe your request"></textarea>
+        </div>
+        <input id="cuButton" type="submit" value="Contact Us" onclick="validateForm()"/>
+      </div>
+    </form>
+
+</main>
+    <!-- End of Main Body -->
+
+
+    <!--Footer-->
+    <footer class="page-footer" id="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Every Voice Matters</h5>
+            <p class="grey-text text-lighten-4">
+              See what you can do to make a change.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+              <li><a href="/Resource/resource.html">Resources</a></li>
+              <li><a href="/News/News.html">News</a></li>
+              <li><a href="/contactPage/contact.html">Contact</a></li>
+              <li><a href="/questions/faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="footer-div">
+        <p class="copyright-p">
+          ©<span id="current-year"></span> Voices of The World. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+ <!-- Materialize JS CDN -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <script src="contact.js"></script>
+ <script
+ type="text/javascript"
+ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
+</body>
+</html>

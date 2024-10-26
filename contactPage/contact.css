@@ -1,17 +1,20 @@
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column ;
+  background-color: #fafafa;
+}
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar */
 .main-logo {
-  max-width: 130px;
-  max-height: auto;
+  max-width: 100%;
+  max-height: 10vh;
 }
 
 #nav-container {
@@ -24,7 +27,12 @@ body {
   flex-direction: row;
   align-items: center;
 }
-
+#mobile-demo {
+  background-color: #1c232b;
+}
+#mobile-demo li a {
+  color: white;
+}
 @media (max-width: 992px) {
   #logo-container {
     display: flex;
@@ -35,12 +43,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  #mobile-demo {
-    background-color: #1c232b;
-  }
-  #mobile-demo li a {
-    color: white;
   }
 }
 /* Navbar */
@@ -63,28 +65,31 @@ body {
 h1 {
   margin: 0;
   padding: 17px;
+  padding-top: 40px;
   text-align: center;
   font-size: 50px;
   color: rgb(232, 232, 232);
   text-shadow:  3px 3px 3px #1c232b;
 }
-p {
-  font-size: 18px;
+.heroText {
+  font-size: 20px;
   margin: 6px;
   padding-top: 18px;
+  ;
   text-align: center;
   color: white;
-  text-shadow:  2px 2px 2px #1c232b;
+  text-shadow:  2px 2px 2px #000000;
 }
 
-/* #enquiry {
-  padding-top: ;
-} */
+#enquiry {
+  color: rgb(255, 188, 4);
+  text-shadow: 2px 2px 2px #000000;
+} 
 
 /* form css */
 .form-container {
   display: flex;
-  padding-bottom: 200px;
+  padding-bottom: 50px;
 }
 
 input[input=text], select, textarea {
@@ -145,7 +150,6 @@ label {
 .error {
   color: red;
   font-size: 12px;
-
 }
 .hidden {
   display: none;
@@ -237,3 +241,11 @@ input {
   text-align: center;
 }
 /* Footer */
+
+/* The google translation library was conflicting with materialize's CSS, so I had to overwrite this to make the select language box visible */
+select {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+

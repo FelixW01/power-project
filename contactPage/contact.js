@@ -10,17 +10,22 @@ function toggleCommentBox() {
   }
 };
 
+// Function to initialize the google translate element from google translate library
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'},'google_translate_element');
+} 
+
 
 /* Form validation */ 
-/*
+
 function validateForm() {
   document.querySelectorAll('.error').forEach(el => el.classList.add('hidden'))
   let isValid = true;
   const firstName = document.getElementById("firstName").value.trim();
   if (firstName === "") {
     document.getElementById("firstNameError").classList.remove('hidden');
-    isValid = false;
-  }
+    isValid = false; 
+  } 
 
   const lastName = document.getElementById("lastName").value.trim();
   if (lastName === "") {
@@ -45,16 +50,20 @@ function validateForm() {
   const options = document.getElementById("options-form").value;
   if (options === "default") {
     document.getElementById("optionsError").classList.remove('hidden');
+  } else {
+    console.log('something went wrong')
   }
-  return isValid;
+    return isValid; 
   
 }
 
-document.getElementById('contactForm').addEventListener('submit', function(event)) {
-  if (!validateForm()) {
-    Event.preventDefault();
-  }
-}; */
+
+
+//  document.getElementById('contactForm').addEventListener('submit', function(event)) {
+//    if (validateForm()) {
+//       event.preventDefault();
+//    }
+//   }; 
 
 
 

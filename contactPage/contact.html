@@ -23,7 +23,7 @@
   <nav>
     <div class="nav-wrapper" id="nav-container">
       <div>
-        <a href="#!" class="brand-logo" id="logo-container"
+        <a href="index.html" class="brand-logo" id="logo-container"
           ><img src="/public/Images/logo.png" class="main-logo"
         /></a>
       </div>
@@ -54,6 +54,7 @@
     <li><a href="/News/News.html">News</a></li>
     <li><a href="/contactPage/contact.html">Contact</a></li>
     <li><a href="/questions/faq.html">FAQ</a></li>
+    <li><a class="waves-effect" id="google_translate_element"></a></li>
   </ul>
 </header>
     <!-- End Header/Nav -->
@@ -95,7 +96,7 @@
         <input type="tel" id="phone" name="phone" required>
         
 
-        <!-- <div class="error hidden" id="phoneError">Please enter a valid phone number.</div> -->
+        <div class="error hidden" id="phoneError">Please enter a valid phone number.</div>
       </fieldset>
 
         <label for="options">Type of request:</label>
@@ -112,7 +113,7 @@
             <label for="comment">Comments:</label>
             <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Describe your request"></textarea>
         </div>
-        <input id="cuButton" type="submit" value="Contact Us"/>
+        <input id="cuButton" type="submit" value="Contact Us" onclick="validateForm()"/>
       </div>
     </form>
 
@@ -155,5 +156,9 @@
  <!-- Materialize JS CDN -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
  <script src="contact.js"></script>
+ <script
+ type="text/javascript"
+ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
 </body>
 </html>

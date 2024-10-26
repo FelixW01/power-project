@@ -130,3 +130,17 @@ h2 {
   text-align: center;
 }
 /* Footer */
+
+/* The google translation library was conflicting with materialize's CSS, so I had to overwrite this to make the select language box visible */
+select {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+#mobile-demo {
+  background-color: #1c232b;
+}
+#mobile-demo li a {
+  color: white;
+}

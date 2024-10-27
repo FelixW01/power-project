@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-/* Form validation */ 
-
+// Form validation  
 function validateForm() {
   document.querySelectorAll('.error').forEach(el => el.classList.add('hidden'))
   let isValid = true;
@@ -65,13 +64,12 @@ function validateForm() {
   const options = document.getElementById("options-form").value;
   if (options === "default") {
     document.getElementById("optionsError").classList.remove('hidden');
+    isValid = false;
   } else {
-    console.log('something went wrong')
-  }
-    return isValid; 
+    return isValid;
+  } 
   
-}
-
+};
 
 
 //  document.getElementById('contactForm').addEventListener('submit', function(event)) {
@@ -79,13 +77,6 @@ function validateForm() {
 //       event.preventDefault();
 //    }
 //   }; 
-
-
-
-
-
-
-
 
 /* Dynamic footer and hamburger nav bar code*/
 const currentYear = new Date().getFullYear();

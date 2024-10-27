@@ -26,6 +26,7 @@
             /></a>
           </div>
           <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a id="language-button">Language</a></li>
             <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
             <li><a href="/Resource/resource.html">Resources</a></li>
             <li><a href="/News/News.html">News</a></li>
@@ -51,18 +52,23 @@
         <li><a href="/News/News.html">News</a></li>
         <li><a href="/contactPage/contact.html">Contact</a></li>
         <li><a href="/questions/faq.html">FAQ</a></li>
+        <li><a class="waves-effect" id="google_translate_element"></a></li>
       </ul>
     </header>
 
+    <div class="img-container">
+    <img class="photo" src="/public/Images/aboutUs-img.jpg" alt="Globe of flags">
+   </div>
+
     <main class="main-container">
-        <div class="information one">
+        <div class="information">
           <h1 class="title">About Us</h1>
           <p>We are a nonprofit helping Spanish speakers in Charlotte with limited English skills. We assist with document translation, setting up Spanish-language accounts, financial literacy, and scam awareness. We also provide referrals for resources, offering guidance on obtaining a state ID or filing taxes, including necessary documents, estimated costs, and recommendations for trusted local businesses.</p>
         </div>
-        <div class="information two">
+        <div class="information">
           <h3 class="title">Why We Do This?</h2>
             <p>Many people in the U.S. struggle with English, including those here for over 5 or 10 years. While government services must provide Spanish assistance, websites are often outdated, and finding a translator can be difficult, leading to long wait times. Communication is often mediated by someone who doesn't fully understand, resulting in unmet needs and vulnerability to scams, such as receiving unreadable documents.</p>        </div>
-        <div class="information three">
+        <div class="information">
           <h3 class="title">Why we started this and more about our founders</h3>
           <p>We started this organization because it is an issue we are passionate about. This issue and divide because of a  language barrier has affected a majority of our founders whether it be us directly or our families.</p>
         </div>
@@ -101,5 +107,8 @@
     <!-- Materialize JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="aboutUsJs.js"></script>
+    <script
+    type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

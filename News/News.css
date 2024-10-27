@@ -1,0 +1,172 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.main-logo {
+  max-width: 100%;
+  max-height: 10vh;
+}
+
+#nav-container {
+  background-color: #1c232b;
+  min-height: 10vh;
+}
+#ul-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#mobile-demo {
+  background-color: #1c232b;
+}
+
+#mobile-demo li a {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  #logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  #hamburger-icon {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #mobile-demo {
+    background-color: #1c232b;
+  }
+  #mobile-demo li a {
+    color: white;
+  }
+}
+/* Navbar */
+
+/* Main */
+@media (min-width: 670px) {
+  .card-content {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1100px) {
+  .card-content {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 1500px) {
+  .container {
+    width: 80%;
+  }
+  .card-content {
+    font-size: 2.2rem;
+  }
+  .hero-container {
+    min-height: 30vw;
+  }
+}
+.hero-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/public/Images/content-8.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.hero-container {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #002f6c;
+}
+
+.material-icons {
+  padding-top: 1%;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5vw;
+  color: white;
+  padding-bottom: 1%;
+  background-color: #002f6c;
+}
+.collapsible {
+  margin-top: 0;
+}
+
+/* Footer */
+#footer-container {
+  width: 100%;
+  padding: 0;
+  background-color: #1c232b;
+}
+.copyright-p {
+  text-align: center;
+}
+/* Footer */
+
+.material-icons {
+  padding-top: 1%;
+}
+h2 {
+  text-align: center;
+  font-size: 2.5vw;
+  color: white;
+  padding-bottom: 1%;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+  min-height: 270px;
+}
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.card-title:hover {
+  color: rgb(116, 116, 199);
+}
+.hotline {
+  color: #3498db;
+}
+.hotline:hover {
+  color: lightcoral;
+}
+
+/* The google translation library was conflicting with materialize's CSS, so I had to overwrite this to make the select language box visible */
+select {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Page</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Every Voice Matters | Resource</title>
+    <!-- Materializecss CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- Google Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper" id="nav-container">
+          <a href="/index.html" class="brand-logo" id="logo-container"
+            ><img
+              src="/public/Images/logo.png"
+              class="main-logo"
+              alt="logo of 5 people holding hands in a circle"
+          /></a>
+          <ul class="right hide-on-med-and-down ul-container" id="ul-container">
+            <li><a id="language-button">Language</a></li>
+            <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="/Resource/resource.html">Resources</a></li>
+            <li><a href="/News/News.html">News</a></li>
+            <li><a href="/contactPage/contact.html">Contact</a></li>
+            <li><a href="/questions/faq.html">FAQ</a></li>
+          </ul>
+          <!-- Hamburger Menu, when clicked, the target of mobile-demo will open  -->
+          <a
+            href="#"
+            data-target="mobile-demo"
+            class="sidenav-trigger right"
+            id="hamburger-icon">
+            <i class="material-icons">menu</i></a
+          >
+        </div>
+      </nav>
+
+      <!-- Side Nav, hidden until hamburger menu is triggered through sidenav-trigger -->
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+        <li><a href="/Resource/resource.html">Resources</a></li>
+        <li><a href="/News/News.html">News</a></li>
+        <li><a href="/contactPage/contact.html">Contact</a></li>
+        <li><a href="/questions/faq.html">FAQ</a></li>
+        <li><a class="waves-effect" id="google_translate_element"></a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="hero-container">
+        <div class="hero-image"></div>
+        <h2>Newsletter</h2>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="/public/Images/content-9.jpg" />
+        </div>
+        <div class="card-content">
+          <span id="test" class="card-title grey-text text-darken-4"
+            >Meet Itaty</span
+          >
+          <p>
+            Itaty has been volunteering with us for a while now, providing
+            translation services at local clinics. Her passion for helping
+            others stems from her own experiences as an immigrant.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="/public/Images/content-6.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4"
+            >Legislative Updates</span
+          >
+          <p>
+            On September 18, 2024, the US House of Representatives unanimously
+            passed legislation to expand language access for telehealth
+            services.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="/public/Images/content-5.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4"
+            >Voices from Our Community</span
+          >
+          <p>
+            “Thanks to your organization, I finally felt understood at my
+            doctor’s appointment. I can’t express how much that means to me!” -
+            Maria, community member
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src="/public/Images/content-7.jpg" />
+        </div>
+        <div class="card-content">
+          <span class="card-title grey-text text-darken-4"
+            >Website Creation</span
+          >
+          <p>
+            Thanks to our friends over at Road To Hire we have now estabished a
+            beautiful working website so that now our voice can be heard
+            worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer" id="footer-container">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Every Voice Matters</h5>
+            <p class="grey-text text-lighten-4">
+              See what you can do to make a change.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a href="/aboutUs/aboutUs.html">About Us</a></li>
+              <li><a href="/Resource/resource.html">Resources</a></li>
+              <li><a href="/News/News.html">News</a></li>
+              <li><a href="/contactPage/contact.html">Contact</a></li>
+              <li><a href="/questions/faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="footer-div">
+        <p class="copyright-p">
+          ©<span id="current-year"></span> Voices of The World. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="News.js"></script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
 </html>

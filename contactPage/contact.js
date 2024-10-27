@@ -12,12 +12,8 @@ function toggleCommentBox() {
 
 // Function to initialize the google translate element from google translate library
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-
+  new google.translate.TranslateElement({pageLanguage: 'en'},'google_translate_element');
+} 
 // Event Listener that runs when DOM content is loaded (This is from materializecss)
 document.addEventListener("DOMContentLoaded", function () {
   var elems = document.querySelectorAll(".sidenav");
@@ -34,8 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* Form validation */
-
+// Form validation  
 function validateForm() {
   document
     .querySelectorAll(".error")
@@ -67,20 +62,25 @@ function validateForm() {
     isValid = false;
   }
 
-  const options = document.getElementById("options-form").value;
-  if (options === "default") {
-    document.getElementById("optionsError").classList.remove("hidden");
-  } else {
-    console.log("something went wrong");
-  }
-  return isValid;
-}
+    const options = document.getElementById("options-form").value;
+    if (options === "default") {
+      document.getElementById("optionsError").classList.remove('hidden');
+      isValid = false;
+  } 
+  
+};
+
+// document.getElementsByClassName('contactForm').addEventListener('submit', function(event)) {
+//   event.preventDefault();
+//   alert('Form Submitted Successfully!');
+//   this.reset();
+// };
 
 //  document.getElementById('contactForm').addEventListener('submit', function(event)) {
 //    if (validateForm()) {
 //       event.preventDefault();
 //    }
-//   };
+//   }; 
 
 /* Dynamic footer and hamburger nav bar code*/
 const currentYear = new Date().getFullYear();

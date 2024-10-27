@@ -45,7 +45,7 @@ p {
     align-items: center;
   }
 }
-/* Navbar */
+/* End Navbar */
 
 /* Main */
 
@@ -91,7 +91,6 @@ h1 {
   display: flex;
   padding-bottom: 50px;
 }
-
 input[input=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -99,7 +98,6 @@ input[input=text], select, textarea {
   resize: vertical;
   box-sizing: border-box;
 }
-
 .fName {
   margin: 10px;
   width: 100%;
@@ -122,9 +120,6 @@ input[input=text], select, textarea {
 Form {
   display: flex;
   width: 100vw;
-/*   
-  border: 1px solid black;
-  */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -145,8 +140,9 @@ label {
 #commentBox {
   display: none;
   margin: 20px;
-
 }
+
+/* error message */
 .error {
   color: red;
   font-size: 12px;
@@ -172,8 +168,7 @@ input {
   cursor: pointer;
   background-color: rgb(52, 114, 247);
 }
-
-/* Main */
+/* End Main */
 
 /* media queries*/
 @media (min-width: 560px) {
@@ -240,7 +235,7 @@ input {
 .copyright-p {
   text-align: center;
 }
-/* Footer */
+/* End Footer */
 
 /* The google translation library was conflicting with materialize's CSS, so I had to overwrite this to make the select language box visible */
 select {
